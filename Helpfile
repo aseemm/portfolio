@@ -1,0 +1,11 @@
+# Initialize a new Gatsby app, accept defaults
+npm init gatsby
+
+# Containerize
+Add Dockerfile, .dockerignore
+
+# Build image
+docker build -t gatsby-nginx .
+
+# Run image (localhost:8080)
+docker run --rm -it -p 8080:80 gatsby-nginx
