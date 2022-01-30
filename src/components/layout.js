@@ -10,6 +10,7 @@ import {
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
+  // filter out static images by using sourceInstanceName
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -19,7 +20,8 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
   `);
-  // console.log(data);
+
+  console.log(data);
 
   return (
     <div className={container}>
@@ -37,6 +39,11 @@ const Layout = ({ pageTitle, children }) => {
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
               About
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/blog" className={navLinkText}>
+              Blog
             </Link>
           </li>
         </ul>
