@@ -11,3 +11,12 @@ docker build -t gatsby-nginx .
 docker run --rm -it -p 8080:80 gatsby-nginx
 
 # Deployed on Gatsby Cloud at https://portfoliomain86471.gtsb.io
+git push origin main
+
+# Next Steps
+. Tutorial to Portfolio
+. Styling, https://www.gatsbyjs.com/docs/how-to/
+. Testing, https://www.gatsbyjs.com/docs/how-to/
+. Performance, Scaling Measurements, https://www.gatsbyjs.com/docs/how-to/
+. Serverless, https://www.gatsbyjs.com/docs/reference/functions/
+. Server-side rendering, https://www.gatsbyjs.com/docs/how-to/rendering-options/using-server-side-rendering/
