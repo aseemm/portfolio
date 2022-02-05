@@ -9,3 +9,5 @@ docker build -t gatsby-nginx .
 
 # Run image (localhost:8080)
 docker run --rm -it -p 8080:80 gatsby-nginx
+
+# Deployed on Gatsby Cloud at https://portfoliomain86471.gtsb.io
